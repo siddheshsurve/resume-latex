@@ -1,0 +1,196 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{fontawesome5}
+    \usepackage{setspace}
+    \usepackage{amssymb}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.70in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+    
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Siddhesh Surve}}\\
+	\vspace{2mm}
+	  \href{mailto:paritpranav@gmail.com}{\faEnvelope \ sysurve24@gmail.com} \ \
+	  \href{tel:+917058613042}{\faPhone \ +91 8390344586} \ \ \href{https://www.linkedin.com/in/siddheshsurve83/}{\faLinkedin \ Siddhesh Surve} \ \
+	  \href{https://github.com/siddheshsurve}{\faGithub \ @siddheshsurve} \\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\vspace{2mm}
+\textbf{Pune Institute of Computer Technology}\hfill Pune, IN\\
+Bachelor in Computer Engineering \textit{GPA: 8.66} \hfill Jul 2021 - Jun 2024\\
+\vspace{3mm}
+\textbf{Dr. Babasaheb Ambedkar Technological University}\hfill Raigad, IN\\
+Diploma in Computer Engineering \textit{GPA: 9.80} \hfill Jun 2018 - Jun 2021\\
+\vspace{3mm}
+\textbf{Sanskar Dham Vidyalaya}\hfill Raigad, IN\\
+SSC \textit{Percentage: 89.60} \hfill June 2018\\
+\vspace{3mm}
+
+%==== Projects ====%
+\header{Projects}
+\vspace{2mm}
+{\textbf{Helping Hands}}\hfill 
+\href{https://github.com/Org-Helping-Hands}{\faGithub}\\
+\vspace{1mm}
+Tech Stack: React, Node, Express, MYSQL
+\vspace{-1mm}
+\begin{itemize} \itemsep 0.5pt
+    \item Developed a dynamic web application that works as a middleman between needy people and helpers.
+    \item application includes features such as \textbf{uploading posts, searching nearby, requirement filters}, etc.
+    \item Developed frontend in \textbf{React JS}, Backend in \textbf{Node JS} and \textbf{Express JS}, \& used \textbf{MYSQL} to manage the database. 
+    \item My role included UI/UX designing, frontend development, API integration, and backend development.
+\end{itemize}
+\vspace{2mm}
+
+{\textbf{MovieVerse}} \hfill \href{https://movieverse-beta.vercel.app/}{\faGlobe[regular]} \
+\href{https://github.com/siddheshsurve/movieverse/}{\faGithub}\\
+\vspace{1mm}
+Tech Stack: React JS, Firebase, Tailwind CSS
+\vspace{-1mm}
+\begin{itemize} \itemsep 0.5pt
+    \item Developed a Movie Rating application allows to rate and review a movie
+    \item For frontend I have used \textbf{React JS} and \textbf{Firebase Firestore} for backend.
+    \item I have provided otp based used authentication using \textbf{Firebase Authentication}
+\end{itemize}
+\vspace{2mm}
+
+{\textbf{ResumePro}} \hfill \href{https://resume-builder-iota-one.vercel.app/}{\faGlobe[regular]} \
+\href{https://github.com/siddheshsurve/resume-builder}{\faGithub}\\
+\vspace{1mm}
+Tech Stack: React JS and CSS
+\vspace{-1mm}
+\begin{itemize} \itemsep 0.5pt
+    \item Developed an application using \textbf{React JS} that help us to build resume in easy way.
+    \item Helps students to get their resume in hand just by  \textbf{filling up a single form} form and app converts into a  \textbf{professional resume.}
+    \item Also provides functionality to \textbf{download resume in PDF Format}.
+\end{itemize}
+\vspace{2mm}
+
+\textbf{Other small scale projects}\hfill  \href{https://github.com/siddheshsurve}{\faGithub}\\
+\vspace{1mm}
+\begin{itemize} \itemsep 0.5pt
+ Youtube Clone, Spotify Clone, Chat App using firebase, Record Keeper, etc.
+\vspace{-1mm}
+
+\end{itemize}
+\vspace{4mm}
+
+
+
+%====Skills ====%
+
+\header{Skills}
+\vspace{2mm}
+\begin{tabular}{ l l }
+        \vspace{2mm}
+	\textbf{Programming Languages:} & C++, JavaScript, Java\\ 
+        \vspace{2mm}
+	\textbf{Web Development:} & Node.js, Express js, HTML, CSS, React\\
+        \vspace{2mm}
+	\textbf{Databases: } & MySQL, MongoDB, Firestore\\
+        \vspace{2mm}
+	\textbf{Version Control:} &Git and GitHub \\
+
+\end{tabular}
+\vspace{4mm}
+
+%====Skills ====%
+
+\header{CS Fundamentals}
+\vspace{2mm}
+\begin{tabular}{ l l }
+        \vspace{2mm}
+	\textbf{OOPS} & \hspace{2cm} \textbf{DBMS}\\ 
+        \vspace{2mm}
+	\textbf{Operating Systems} & \hspace{2cm} \textbf{Computer Networks}\\
+\end{tabular}
+\vspace{3mm}
+
+%==== achievements ====%
+
+
+\header{Achievements}
+\vspace{1mm}
+\begin{itemize} \itemsep 0.5pt
+\item Secured \textbf{Maharashtra state rank 130th} in Diploma batch 2021 among 130000+ students.
+\end{itemize}
+\vspace{2mm}
+
+\header{Extra Curricular Activities}
+\vspace{1mm}
+\begin{itemize} \itemsep 0.5pt
+\item \textbf{Badminton Singles Finalist} at intra college badminton tournament organized in Dr. Babasaheb Ambedkar Technological University
+\end{itemize}
+
+
+\end{document}
